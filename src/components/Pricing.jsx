@@ -17,7 +17,7 @@ const plans = [
     },
     features: [
       '100% Free',
-      'Sales Pressure Free',
+      'No Sales Pressure',
       'Alternative Aware (WordPress, Agency, Custom)',
       'Free Design Mockup',
     ],
@@ -85,13 +85,12 @@ function Plan({
   button,
   features,
   featured = false,
-  activePeriod,
   logomarkClassName,
 }) {
   return (
     <section
       className={clsx(
-        'flex flex-col overflow-hidden rounded-3xl p-6 shadow-lg shadow-gray-900/5',
+        'flex h-full flex-col overflow-hidden rounded-3xl p-6 shadow-lg shadow-gray-900/5',
         featured ? 'order-first bg-gray-900 lg:order-none' : 'bg-white'
       )}
     >
