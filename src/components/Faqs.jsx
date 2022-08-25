@@ -12,7 +12,7 @@ const faqs = [
     {
       question: 'How long does development take?',
       answer:
-        'A standard 5-page site is researched, developed, and deployed in about a week. Of course, as the size or complexity of the site increases - the time increases.',
+        'A standard 5-page site is researched, developed, and deployed in about 14 days. Of course, as the size or complexity of the site increases - the time increases.',
     },
     {
       question: 'Can I cancel anytime under monthly pricing?',

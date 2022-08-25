@@ -15,10 +15,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Pocket - Invest at the perfect time.</title>
+        <title>Tell Your Story Online</title>
         <meta
           name="description"
-          content="By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses."
+          content="I help financial services profesisionals tell their story online, in a compelling and engaging way."
         />
       </Head>
       <Header />
