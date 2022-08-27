@@ -2,7 +2,6 @@ import { useState } from 'react'
 import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 
 const plans = [
@@ -25,7 +24,8 @@ const plans = [
   {
     name: 'Monthly Plan',
     featured: false,
-    price: { Monthly: '$149 / Month' },
+    price: { Monthly: '$249 / Month' },
+    price2: { Monthly: '$149 / Month' },
     description: `You're ready to move forward. Get your project done with no upfront charges or lengthy commitments.`,
     button: {
       label: 'Get a Free Design Mockup',
@@ -39,22 +39,6 @@ const plans = [
       'Free Site Hosting',
     ],
   },
-  // {
-  //   name: 'You Own the Code',
-  //   featured: false,
-  //   price: { Monthly: '$2,499 / Once' },
-  //   description: `You want a beautifully designed site without the burden of a monthly fee. You are comfortable with hosting, content changes, and site maintenance.`,
-  //   button: {
-  //     label: 'Start a Project',
-  //     href: '#contact',
-  //   },
-  //   features: [
-  //     'Up to 5 Page Project',
-  //     'Copywriting & Design Included',
-  //     '90 Days of Free Support',
-  //     'Full ownership of the code',
-  //   ],
-  // },
 ]
 
 function CheckIcon(props) {
@@ -81,11 +65,13 @@ function CheckIcon(props) {
 function Plan({
   name,
   price,
+  price2,
   description,
   button,
   features,
   featured = false,
   logomarkClassName,
+  i,
 }) {
   return (
     <section
@@ -103,14 +89,41 @@ function Plan({
         <Logo className={clsx('h-6 w-6 flex-none', logomarkClassName)} />
         <span className="ml-4">{name}</span>
       </h3>
-      <p
-        className={clsx(
-          'relative mt-5 flex text-3xl tracking-tight',
-          featured ? 'text-white' : 'text-gray-900'
-        )}
-      >
-        {price.Monthly}
-      </p>
+      {i > 0 ? (
+        <p
+          className={clsx(
+            'relative mt-5 flex text-xl tracking-tight text-red-700 line-through'
+          )}
+        >
+          {price.Monthly}
+        </p>
+      ) : null}
+
+      {i > 0 ? (
+        <>
+          <p
+            className={clsx(
+              'relative mt-1 flex text-3xl tracking-tight',
+              featured ? 'text-white' : 'text-gray-900'
+            )}
+          >
+            {price2.Monthly}
+          </p>
+          <span className="text-sm font-light italic">Until Sept. 15th</span>
+        </>
+      ) : null}
+
+      {i === 0 ? (
+        <p
+          className={clsx(
+            'relative mt-5 flex text-3xl tracking-tight',
+            featured ? 'text-white' : 'text-gray-900'
+          )}
+        >
+          {price.Monthly}
+        </p>
+      ) : null}
+
       <p
         className={clsx(
           'mt-3 text-sm',
@@ -201,8 +214,8 @@ export function Pricing() {
         </div>
 
         <div className="mx-auto mt-16 grid grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 md:grid-cols-2 lg:max-w-none">
-          {plans.map((plan) => (
-            <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
+          {plans.map((plan, i) => (
+            <Plan key={plan.name} {...plan} activePeriod={activePeriod} i={i} />
           ))}
         </div>
       </div>
