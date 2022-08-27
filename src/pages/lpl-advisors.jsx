@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
-import { Hero } from '@/components/lpl/Hero'
-import { PrimaryFeatures } from '@/components/lpl/PrimaryFeatures'
-import { BringValue } from '@/components/lpl/BringValue'
-import { WhatLPLNeeds } from '@/components/lpl/WhatLPLNeeds'
+import { Hero } from '@/components/LPL/Hero'
+import { PrimaryFeatures } from '@/components/LPL/PrimaryFeatures'
+import { BringValue } from '@/components/LPL/BringValue'
+import { WhatLPLNeeds } from '@/components/LPL/WhatLPLNeeds'
 import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
