@@ -23,7 +23,7 @@ export function CallToAction() {
           </p>
           <div className="mt-8 flex justify-center">
             <button className=" rounded border border-gray-400 px-4 py-2 text-white transition-all hover:border-white">
-              <a href="#contact">Let's Chat</a>
+              <a href="#contact">Get a Free Design Mockup</a>
             </button>
           </div>
         </div>

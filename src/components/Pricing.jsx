@@ -12,7 +12,7 @@ const plans = [
     price: { Monthly: '$0' },
     description: `You want to talk to someone about a project you've been thinking about? I love discussing project strategy. `,
     button: {
-      label: 'Schedule a Consultation',
+      label: 'Schedule Consultation',
       href: '#contact',
     },
     features: [
@@ -28,7 +28,7 @@ const plans = [
     price: { Monthly: '$149 / Month' },
     description: `You're ready to move forward. Get your project done with no upfront charges or lengthy commitments.`,
     button: {
-      label: 'Start a Project',
+      label: 'Get a Free Design Mockup',
       href: '#contact',
     },
     features: [
@@ -39,22 +39,22 @@ const plans = [
       'Free Site Hosting',
     ],
   },
-  {
-    name: 'You Own the Code',
-    featured: false,
-    price: { Monthly: '$2,499 / Once' },
-    description: `You want a beautifully designed site without the burden of a monthly fee. You are comfortable with hosting, content changes, and site maintenance.`,
-    button: {
-      label: 'Start a Project',
-      href: '#contact',
-    },
-    features: [
-      'Up to 5 Page Project',
-      'Copywriting & Design Included',
-      '90 Days of Free Support',
-      'Full ownership of the code',
-    ],
-  },
+  // {
+  //   name: 'You Own the Code',
+  //   featured: false,
+  //   price: { Monthly: '$2,499 / Once' },
+  //   description: `You want a beautifully designed site without the burden of a monthly fee. You are comfortable with hosting, content changes, and site maintenance.`,
+  //   button: {
+  //     label: 'Start a Project',
+  //     href: '#contact',
+  //   },
+  //   features: [
+  //     'Up to 5 Page Project',
+  //     'Copywriting & Design Included',
+  //     '90 Days of Free Support',
+  //     'Full ownership of the code',
+  //   ],
+  // },
 ]
 
 function CheckIcon(props) {
@@ -163,7 +163,7 @@ export function Pricing() {
       aria-labelledby="pricing-title"
       className="border-t border-gray-200 bg-gray-100 py-20 sm:py-32"
     >
-      <Container>
+      <div className=" mx-auto max-w-3xl px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2
             id="pricing-title"
@@ -201,12 +201,12 @@ export function Pricing() {
           </div>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 md:grid-cols-2 lg:max-w-none">
           {plans.map((plan) => (
             <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
           ))}
         </div>
-      </Container>
+      </div>
     </section>
   )
 }

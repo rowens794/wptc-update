@@ -196,7 +196,7 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            A Developer that Builds to Your Needs
+            Incorporates the Best Practices of the Web
           </h2>
           <p className="mt-2 text-lg text-gray-600">
             Create a web property that goes beyond the expectations of your

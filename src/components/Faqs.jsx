@@ -22,9 +22,9 @@ const faqs = [
   ],
   [
     {
-      question: `What is the difference between "Monthly Pricing" and "Own the Code" pricing?`,
+      question: `Do your sites include blogging capabilities?`,
       answer:
-        'They are essentially the same, the only difference being who owns the code. Under monthly pricing, I retain ownership of the source code, and you license the use of the source code as long as you pay the monthly fee. Monthly pricing allows you to get up and running as cost-efficiently as possible and comes with free hosting, support, and content edits as long as you are a customer.',
+        'Absolutely, blogging is an advanced features that require extra work to setup and manage, so it requires an additional surcharge - but I would be happy to discuss any additional cost prior to a project getting underway.',
     },
     {
       question: 'What if I get tired of the original design?',

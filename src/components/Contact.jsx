@@ -10,7 +10,7 @@ export function Contact() {
         <div className="bg-gray-900 py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
           <div className="mx-auto max-w-lg">
             <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl sm:tracking-tight">
-              Get in touch
+              Request a Free Design Mockup
             </h2>
             <p className="mt-3 leading-6 text-gray-200">
               Feel free to reach out at any time. I'm always thrilled to talk
@@ -89,7 +89,7 @@ const ContactForm = () => {
                   rows={5}
                   id="comment"
                   className="focus:shadow-outline block w-full appearance-none rounded-md bg-gray-200 px-4 py-4 font-light leading-normal text-gray-700 placeholder-gray-500 focus:outline-none"
-                  placeholder="Add your comment..."
+                  placeholder="If you'd like a free design mockup, please leave the url of your current site (if you have one).&#10;  If you'd like to chat about anything else just leave some details here."
                   defaultValue=""
                 />
               </div>
