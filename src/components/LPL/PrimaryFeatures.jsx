@@ -8,24 +8,21 @@ import { Container } from '@/components/Container'
 const features = [
   {
     name: 'Advisor Interview',
-    description:
-      'Diving straight into code is a recipe for a failed project. I first seek to understand.  By identifying the stregths of your practice, I can best layout a strategy for shining a spotlight on your strengths.',
+    description: `Diving straight into code is a recipe for a failed project. I first seek to understand. By identifying your practice's strengths, I shine a spotlight on what you do best.`,
     icon: DeviceUserIcon,
     img: '/images/notes.jpg',
     shortDesc: 'Interview',
   },
   {
     name: 'Design Mockups & Approval',
-    description:
-      'With an understanding of your needs, I begin the design process, with you involved in every step from wireframe sketches to final design.',
+    description: `With an understanding of your needs, I begin the design process, with you involved in every step from wireframe sketches to final design.`,
     icon: DeviceNotificationIcon,
     img: '/images/wireframe.jpeg',
     shortDesc: 'Design',
   },
   {
     name: 'Code & Deployment',
-    description:
-      'Once a design is in place, I translate visuals into code. The work we put in upfront ensures an outcome that leaves you thrilled and puts your message front and center.',
+    description: `Once a design is in place, I translate visuals into code. The work upfront ensures an outcome that leaves you thrilled and puts your message front and center.`,
     icon: DeviceTouchIcon,
     img: '/images/implementation.jpg',
     shortDesc: 'Code',

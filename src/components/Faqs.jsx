@@ -24,7 +24,7 @@ const faqs = [
     {
       question: `Do your sites include blogging capabilities?`,
       answer:
-        'Absolutely, blogging is an advanced features that require extra work to setup and manage, so it requires an additional surcharge - but I would be happy to discuss any additional cost prior to a project getting underway.',
+        'Absolutely, blogging is an advanced feature that requires extra work to set up and manage; it does require an additional surcharge - but I would be happy to discuss any additional cost before a project gets underway.',
     },
     {
       question: 'What if I get tired of the original design?',
@@ -79,9 +79,9 @@ export function Faqs() {
               <ul role="list" className="space-y-10">
                 {column.map((faq, faqIndex) => (
                   <li key={faqIndex}>
-                    <h3 className="text-lg font-semibold leading-6 text-gray-900">
+                    <span className="block text-lg font-semibold leading-6 text-gray-900">
                       {faq.question}
-                    </h3>
+                    </span>
                     <p className="mt-4 text-sm text-gray-700">{faq.answer}</p>
                   </li>
                 ))}

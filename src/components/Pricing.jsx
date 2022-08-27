@@ -172,9 +172,8 @@ export function Pricing() {
             Easy to Understand Pricing
           </h2>
           <p className="text mt-2 font-light text-gray-700">
-            I offer both monthly and project-based pricing, depending on your
-            preference. Whichever you choose, you don't pay anything until you
-            see the final version of your site.
+            Project pricing is simple - 1 monthly fee, cancel anytime, and you
+            don't pay anything until your project is complete.
           </p>
         </div>
 

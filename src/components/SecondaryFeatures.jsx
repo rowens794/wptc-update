@@ -213,9 +213,9 @@ export function SecondaryFeatures() {
               className="rounded-2xl border border-gray-200 p-8"
             >
               <feature.icon className="h-8 w-8" />
-              <h3 className="mt-6 font-semibold text-gray-900">
+              <span className="mt-6 block font-semibold text-gray-900">
                 {feature.name}
-              </h3>
+              </span>
               <p className="mt-2 text-gray-700">{feature.description}</p>
             </li>
           ))}

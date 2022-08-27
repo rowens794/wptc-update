@@ -37,8 +37,9 @@ export function WhatLPLNeeds() {
                 </p>
               </dt>
               <dd class="mt-2 ml-16 text-base text-gray-500">
-                All content, disclosures, BrokerCheck links adhere to guidance
-                provided from FINRA and the SEC so that you stay in compliance.
+                All content, disclosures, BrokerCheck® links adhere to the
+                guidance provided by FINRA and the SEC so that you stay in
+                compliance.
               </dd>
             </div>
 
@@ -62,7 +63,7 @@ export function WhatLPLNeeds() {
                 </p>
               </dt>
               <dd class="mt-2 ml-16 text-base text-gray-500">
-                Software updates, security patches, hosting and everything else
+                Software updates, security patches, hosting, and everything else
                 you need to ensure your site operates smoothly is handled for
                 you.
               </dd>
@@ -79,7 +80,7 @@ export function WhatLPLNeeds() {
               </dt>
               <dd class="mt-2 ml-16 text-base text-gray-500">
                 No long-term contracts, setup fees, or design charges ensure you
-                never face buyers remorse.
+                never face buyer's remorse.
               </dd>
             </div>
 
@@ -103,8 +104,8 @@ export function WhatLPLNeeds() {
                 </p>
               </dt>
               <dd class="mt-2 ml-16 text-base text-gray-500">
-                Save your nickles and dimes. Once your project is live all
-                content adjustments are free - just shoot me an email.
+                Save your nickels and dimes. Once your project is live, all
+                content adjustments are free - simply shoot me an email.
               </dd>
             </div>
           </dl>
