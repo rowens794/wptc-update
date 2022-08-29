@@ -1,14 +1,7 @@
 import { Head, Html, Main, NextScript } from 'next/document'
-import ReactGA from 'react-ga4'
 
 export default function Document() {
   const env = process.env.NODE_ENV
-
-  if (typeof window !== 'undefined' && env !== 'development') {
-    //@ts-ignore
-    ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS) //hard coded for access client side
-    ReactGA.send({ hitType: 'pageview', page: window.location.pathname })
-  }
 
   return (
     <Html className="h-full scroll-smooth bg-gray-50 antialiased" lang="en">
