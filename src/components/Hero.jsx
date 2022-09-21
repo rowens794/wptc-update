@@ -225,7 +225,7 @@ export function Hero() {
       <Container>
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
-            <h1 className="text-4xl font-medium tracking-tight text-gray-900">
+            <h1 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
               Web Development for <br />
               Financial Professionals
             </h1>
@@ -253,12 +253,12 @@ export function Hero() {
 
 const PersonImage = () => {
   return (
-    <div className="relative">
+    <div className="relative h-[400px] lg:h-full">
       <img
         src="/images/ryan1.png"
-        className="relative z-10 mx-auto h-[600px] "
+        className="relative z-10 float-right aspect-[836/1194] h-[400px] lg:mx-auto lg:h-[600px] lg:min-w-[420px]"
       />
-      <div className="absolute bottom-12 left-0 z-20 rounded bg-white px-4 py-2 opacity-60">
+      <div className="absolute bottom-12 right-24 z-20 w-72 rounded bg-white px-4 py-2 opacity-60 lg:left-0">
         <p className="font-bold">Ryan Owens</p>
         <p>Web & Application Developer</p>
         <p className="text-sm">Former Investment Advisor </p>
