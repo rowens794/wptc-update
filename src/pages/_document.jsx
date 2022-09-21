@@ -9,12 +9,6 @@ export default function Document() {
       <body className="flex h-full flex-col ">
         <Main />
         <NextScript />
-        {env === 'production' && (
-          <script
-            src="//code.tidio.co/z726ob5neqrmftts0lqettcdjgy7ywkc.js"
-            async
-          ></script>
-        )}
 
         {env === 'production' && (
           <>
